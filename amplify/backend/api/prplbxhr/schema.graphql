@@ -1,0 +1,25 @@
+type Employees
+  @model
+  @auth(
+    rules: [
+      { allow: owner, operations: [read, update] }
+      { allow: groups, groups: ["Admins"], operations: [create, read, update, delete] }
+      { allow: groups, groups: ["DevOpsTeam", "GrcTeam", "MarketingTeam", "SecurityTeam"], operations: [read] }
+    ]
+  ) {
+  id: ID!
+  username: String
+  firstName: String
+  lastName: String
+  phoneNumber: String
+  department: String
+  certifications: String
+  birthDay: String
+  university: String
+  uniDepartment: String
+  graduationYear: String
+  workStartDate: String
+  hobbies: String
+  favoriteTeam: String
+  hometown: String
+}

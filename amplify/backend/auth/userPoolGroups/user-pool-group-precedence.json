@@ -1,0 +1,22 @@
+[
+  {
+    "groupName": "Admins",
+    "precedence": 1
+  },
+  {
+    "groupName": "SecurityTeam",
+    "precedence": 2
+  },
+  {
+    "groupName": "DevOpsTeam",
+    "precedence": 3
+  },
+  {
+    "groupName": "GrcTeam",
+    "precedence": 4
+  },
+  {
+    "groupName": "MarketingTeam",
+    "precedence": 5
+  }
+]
